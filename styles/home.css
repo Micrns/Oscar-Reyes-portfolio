@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret One&display=swap');
+
+
+:root{
+    --black: #252625;
+    --white: #ededed;
+    --grey: #737475;
+
+}
+
+
+*{
+
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: var(--black); 
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+
+body{
+
+    background-color: var(--black);
+}
+
+
+
+/* Landing page*/
+.transition p{
+
+    color: var(--white); 
+    font-family: "Poiret One";
+    text-align: center;
+    font-size: 50px;
+
+    padding-top: 20%;
+       
+}
+
+
+
+/*About -information*/
+.about h1{
+
+    color: var(--white);
+    font-size: 35px;
+
+    position: absolute;
+
+
+    top: 15%;
+    left: 10%;
+    font-family: "Poiret One";
+    font-weight: 100;
+
+
+}
+
+
+
+
+/*social tab*/ 
+
+.navbar{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li{
+
+    list-style: none;
+    padding-left: 70%;
+    padding-top: 2%;
+    
+
+}
+
+.navbar li a{
+
+    color:var(--white);
+    text-decoration: none;
+    font-size: 30px;
+
+    transition: 0.3s ease;
+
+}
+
+.navbar li a:hover{
+
+    color: var(--grey);
+}
+
+.giticon{
+
+    padding-left: 20px;
+}
+
+
+/*subtext*/
+.speech{
+   position: absolute;
+   width: 830px;
+   height: 87px;
+   top: 20%;
+
+   left: 12%;
+
+   
+
+}
+
+.speech p{color: var(--grey)}
+
+
+
+
+
+
+
+
+
+
+
+
