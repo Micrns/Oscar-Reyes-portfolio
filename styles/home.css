@@ -12,7 +12,7 @@
 
 *{
 
-    min-height: 100vh;
+    max-height: 100vh;
     max-width: 100%;
     background-color: var(--black); 
     margin: 0 auto;
@@ -33,9 +33,11 @@ body{
     color: var(--white); 
     font-family: "Poiret One";
     text-align: center;
-    font-size: 50px;
-
-    padding-top: 20%;
+    font-size: 55px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
        
 }
 
@@ -45,7 +47,7 @@ body{
 .about h1{
 
     color: var(--white);
-    font-size: 50px;
+    font-size: 55px;
 
     position: absolute;
 
@@ -69,9 +71,10 @@ body{
     
 }
 .little-header h2{
-    font-size: 18px;
-    font-weight: 100;
-    color: var(--grey);
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "poiret one";
+    color: var(--blue);
 
 }
 
@@ -120,70 +123,47 @@ body{
 /*text animation*/
 
 
-.wrapper{
+.container{
     position: absolute;
-    width: 900px;
-    height: 100px;
-
-    top: 30%;
+    top:25%;
     left: 10%;
-    z-index: 2;
-    
+    overflow: hidden;
 }
 
-.wrapper .static-txt{
-    display: inline-flex;
+.container .text{
+    position: relative;
     color: var(--grey);
     font-size: 60px;
     font-family: "Poiret One";
-    
+    font-weight: 700;
 }
 
-.wrapper .dynamic-txts{
-    margin-left: -3px;
-    height: 90px;
-    /* overflow: hidden;*/
 
-}
-.dynamic-txts li{
-    list-style: none;
-    color:var(--blue);
-    
-    position: relative;
-
-    top:0;
-    animation: slideText 5s steps(3) infinite;
+.container .second-text{
+    padding-left: 15px;
+    color: var(--blue);
 }
 
-/*@keyframes slideText {
-    100%{
-        top: -660px;
-    }
-}*/
-.dynamic-txts li span{
-    position: relative;
-    
-}
-
-.dynamic-txts li span::after{
-    content: "";
+.text.second-text:before{
+    content:"";
     position: absolute;
-    height:100%;
-    width: 100%;
+    top: 0;
     left: 0;
-    /*background: var(--black);
-    border-left: 3px solid var(--blue);*/
-    
-    animation: typingEffect 1.5s steps(19) infinite;
+    height: 103%;
+    width: 100%;
+    background-color: var(--black);
+    border-left: 2px solid var(--blue);
+
+    animation: typeEffect 4s steps(17) infinite;
 }
 
-/*@keyframes typingEffect {
-    100%{
-        left: 100%;
-        margin: 0 -35px 0 35px;
-    }
+
+@keyframes typeEffect {
+    40%, 60%{left: calc(100% + 4px);}
+    100%{left:0%}
     
-}*/
+}
+
 
 
 
