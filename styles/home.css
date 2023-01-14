@@ -5,6 +5,7 @@
     --black: #252625;
     --white: #ededed;
     --grey: #737475;
+    --blue: #4287f5;
 
 }
 
@@ -44,7 +45,7 @@ body{
 .about h1{
 
     color: var(--white);
-    font-size: 35px;
+    font-size: 50px;
 
     position: absolute;
 
@@ -53,7 +54,24 @@ body{
     left: 10%;
     font-family: "Poiret One";
     font-weight: 100;
+    z-index: 1;
 
+
+}
+
+.little-header{
+    position: absolute;
+    width: 291px;
+    height: 36px;
+    top: 10%;
+    left: 10%;
+    z-index: 0;
+    
+}
+.little-header h2{
+    font-size: 18px;
+    font-weight: 100;
+    color: var(--grey);
 
 }
 
@@ -99,20 +117,73 @@ body{
 }
 
 
-/*subtext*/
-.speech{
-   position: absolute;
-   width: 830px;
-   height: 87px;
-   top: 20%;
+/*text animation*/
 
-   left: 12%;
 
-   
+.wrapper{
+    position: absolute;
+    width: 900px;
+    height: 100px;
 
+    top: 30%;
+    left: 10%;
+    z-index: 2;
+    
 }
 
-.speech p{color: var(--grey)}
+.wrapper .static-txt{
+    display: inline-flex;
+    color: var(--grey);
+    font-size: 60px;
+    font-family: "Poiret One";
+    
+}
+
+.wrapper .dynamic-txts{
+    margin-left: -3px;
+    height: 90px;
+    /* overflow: hidden;*/
+
+}
+.dynamic-txts li{
+    list-style: none;
+    color:var(--blue);
+    
+    position: relative;
+
+    top:0;
+    animation: slideText 5s steps(3) infinite;
+}
+
+/*@keyframes slideText {
+    100%{
+        top: -660px;
+    }
+}*/
+.dynamic-txts li span{
+    position: relative;
+    
+}
+
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    height:100%;
+    width: 100%;
+    left: 0;
+    /*background: var(--black);
+    border-left: 3px solid var(--blue);*/
+    
+    animation: typingEffect 1.5s steps(19) infinite;
+}
+
+/*@keyframes typingEffect {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+    
+}*/
 
 
 
