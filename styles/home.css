@@ -62,7 +62,7 @@ body{
 
 
     top: 25%;
-    left: 15%;
+    left: 10%;
     font-family: "Poiret One";
     font-weight: 100;
     z-index: 1;
@@ -75,7 +75,7 @@ body{
     width: 291px;
     height: 36px;
     top: 20%;
-    left: 15%;
+    left: 10%;
     z-index: 0;
     
 }
@@ -90,7 +90,7 @@ body{
 
 
 
-/*social tab*/ 
+/*social tab nav*/ 
 
 .navbar{
 
@@ -102,7 +102,7 @@ body{
 .navbar li{
 
     list-style: none;
-    padding-left: 70%;
+    
     padding-top: 2%;
     
 
@@ -112,7 +112,7 @@ body{
 
     color:var(--white);
     text-decoration: none;
-    font-size: 30px;
+    
 
     transition: 0.3s ease;
 
@@ -121,16 +121,45 @@ body{
 .navbar li a:hover{
 
     color: var(--grey);
+    font-size: 25px;
 }
 
-.giticon{
 
+
+.linkedicon{
+    font-size: 30px;
+}
+.giticon{
+    font-size: 30px;
     padding-left: 20px;
 }
 
-.resume{padding-left: 20px;}
+.resume{
+    font-size: 30px;
+    padding-left: 20px;
+}
 
+/*maniupulate text nav*/
 
+.navigate-web{
+
+    padding-left: 33%;
+}
+
+.about{
+    font-size: 15px;
+    font-family: "Poiret One";
+}
+.projects{
+    font-family: "Poiret One";
+    padding-left: 20px;
+    font-size: 15px
+}
+.contact{
+    font-family: "Poiret One";
+    font-size: 15px;
+    padding-left: 20px
+}
 
 /*text animation*/
 
@@ -138,7 +167,7 @@ body{
 .container{
     position: absolute;
     top:35%;
-    left: 15%;
+    left: 10%;
     overflow: hidden;
 }
 
@@ -173,6 +202,18 @@ body{
 @keyframes typeEffect {
     40%, 60%{left: calc(100% + 4px);}
     100%{left:0%}
+    
+}
+
+/* scroll icon */ 
+
+
+.scroll-icon{
+    color: var(--grey);
+    position: absolute;
+    font-size: 12px;
+    top: 60%;
+    left: 50%;
     
 }
 
