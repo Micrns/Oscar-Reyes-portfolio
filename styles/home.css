@@ -38,7 +38,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    animation: fadeOut 1.4s forwards;
+
        
+}
+
+
+@keyframes fadeOut {
+    0%{opacity: 1}
+    100%{opacity: 0}
 }
 
 
@@ -52,8 +61,8 @@ body{
     position: absolute;
 
 
-    top: 15%;
-    left: 10%;
+    top: 25%;
+    left: 15%;
     font-family: "Poiret One";
     font-weight: 100;
     z-index: 1;
@@ -65,8 +74,8 @@ body{
     position: absolute;
     width: 291px;
     height: 36px;
-    top: 10%;
-    left: 10%;
+    top: 20%;
+    left: 15%;
     z-index: 0;
     
 }
@@ -119,14 +128,17 @@ body{
     padding-left: 20px;
 }
 
+.resume{padding-left: 20px;}
+
+
 
 /*text animation*/
 
 
 .container{
     position: absolute;
-    top:25%;
-    left: 10%;
+    top:35%;
+    left: 15%;
     overflow: hidden;
 }
 
