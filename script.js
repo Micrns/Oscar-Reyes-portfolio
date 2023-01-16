@@ -16,3 +16,5 @@ window.onload = () =>{
 
   textLoad();
   setInterval(textLoad, 12000);
+
+

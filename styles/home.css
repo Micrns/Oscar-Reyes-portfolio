@@ -10,6 +10,8 @@
 }
 
 
+
+
 *{
 
     max-height: 100vh;
@@ -17,6 +19,7 @@
     background-color: var(--black); 
     margin: 0 auto;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     
 }
 
@@ -276,6 +279,27 @@ body{
 }
 
 
+
+/*scroll bar*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--grey);
+    border-radius: 10px;
+    
+    
+  }
+
+::-webkit-scrollbar-thumb:hover {
+background: var(--white); 
+}
 
 
 
