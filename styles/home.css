@@ -10,6 +10,8 @@
 }
 
 
+
+
 *{
 
     max-height: 100vh;
@@ -17,6 +19,7 @@
     background-color: var(--black); 
     margin: 0 auto;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     
 }
 
@@ -53,6 +56,7 @@ body{
 
 
 /*About -information*/
+
 .about h1{
 
     color: var(--white);
@@ -97,6 +101,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .navbar li{
@@ -212,10 +217,93 @@ body{
     color: var(--grey);
     position: absolute;
     font-size: 12px;
-    top: 60%;
+    top: 90%;
     left: 50%;
     
 }
+
+
+/* About page */
+
+.container-1{
+    min-height: 100vh;
+    min-width: 100%;
+    position: absolute;
+    top: 100%;
+}
+
+
+.about-1{
+    position: absolute;
+
+    left: 10%;
+
+    font-size: 40px;
+    font-family: "Poiret One";
+}
+
+.about-text{
+    color: var(--white);
+}
+
+.me-text{
+    color: var(--blue);
+}
+
+
+.paragraph-1{
+
+    position: absolute;
+    top: 100px;
+    left: 10%;
+
+    width: 625px;
+
+    font-size: 30px;
+    font-family: "Poiret One";
+    color: var(--grey)
+}
+
+/*profile pic */
+
+.profile-picture{
+    position: absolute;
+    left:60%;
+    width: 448px;
+    height: 500px;
+    
+}
+
+.profile-picture img{
+    border-radius: 20px;
+}
+
+
+
+/*scroll bar*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--grey);
+    border-radius: 10px;
+    
+    
+  }
+
+::-webkit-scrollbar-thumb:hover {
+background: var(--white); 
+}
+
+
+
+
 
 
 
