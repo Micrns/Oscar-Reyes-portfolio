@@ -213,14 +213,6 @@ body{
 /* scroll icon */ 
 
 
-.scroll-icon{
-    color: var(--grey);
-    position: absolute;
-    font-size: 12px;
-    top: 90%;
-    left: 50%;
-    
-}
 
 
 /* About page */
@@ -257,12 +249,44 @@ body{
     top: 100px;
     left: 10%;
 
-    width: 625px;
+
+    height: 393px;
+    /*height: 610px;*/
+    width: 680px;
 
     font-size: 30px;
     font-family: "Poiret One";
-    color: var(--grey)
+    color: var(--grey);
+    overflow: hidden;
+    transition: 1s ease;
+
+    
 }
+
+.click-down{
+    position: absolute;
+    color: var(--grey);
+    top: 530px;
+    left: 400px;
+    cursor: pointer;
+}
+
+.click-down:hover{
+    color: var(--black);
+
+}
+
+
+.paragraph-1.active{
+    height:610px;
+}
+
+.click-down.active{
+    top: 710px;
+    transform: rotate(0.5turn);
+}
+
+
 
 /*profile pic */
 
@@ -302,14 +326,152 @@ background: var(--white);
 }
 
 
+/*Skills setting*/
+
+.container-2{
+    min-width: 100%;
+    min-height: 50vh;
+    position: absolute;
+    top: 200%;
+}
+
+.skills-title{
+    position: absolute;
+    color: var(--blue);
+    font-family: "Poiret One";
+    font-size: 40px;
+    text-align: center;
+    width: 100%; 
+}
+
+/*skills 1 box */
+
+.languages{
+    position: absolute;
+    width: 321px;
+    height: 136px;
+    border-radius: 20px;
+    top: 110px;
+    left: 30px;
+    background: #313030;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    
+
+}
 
 
 
+.lang-title{
+    position: absolute;
+    background-color: #313030;
+    color: var(--white);
+    font-family: "Poiret One";
+    top: 10px;
+    left: 120px;
+    
 
 
+}
+.skill-set-lang{
+    position: absolute;
+    top: 50px;
+    background-color: #313030;
+    color: var(--blue);
+    right: 46px; 
+    font-family: "Poiret One";
 
+}
 
+/*skills 2 box */
 
+.frontend-backend{
+    position: absolute;
+    width: 321px;
+    height: 136px;
+    border-radius: 20px;
+    top: 110px;
+    left: 400px;
+    background: #313030;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.frontend-title{
+    position: absolute;
+    background-color: #313030;
+    color: var(--white);
+    font-family: "Poiret One";
+    top: 10px;
+    left: 99px;
+}
+.skill-set{
+    position: absolute;
+    top: 50px;
+    background-color: #313030;
+    color: var(--blue);
+    left: 58px;
+    font-family: "Poiret One";
+}
+
+/*skill box 3 */
+.databases{
+    position: absolute;
+    width: 321px;
+    height: 136px;
+    border-radius: 20px;
+    top: 110px;
+    left: 760px;
+    background: #313030;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.database-title{
+    position: absolute;
+    background-color: #313030;
+    color: var(--white);
+    font-family: "Poiret One";
+    top: 10px;
+    left: 110px;
+}
+
+.skill-set-data{
+    position: absolute;
+    top: 50px;
+    background-color: #313030;
+    color: var(--blue);
+    left: 58px;
+    font-family: "Poiret One";
+}
+
+/*Skill box 4*/
+
+.tools{
+    position: absolute;
+    width: 321px;
+    height: 136px;
+    border-radius: 20px;
+    top: 110px;
+    left: 1120px;
+    background: #313030;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.tools-title{
+    position: absolute;
+    background-color: #313030;
+    color: var(--white);
+    font-family: "Poiret One";
+    top: 10px;
+    left: 130px;
+
+}
+.skills-tools{
+    position: absolute;
+    top: 50px;
+    background-color: #313030;
+    color: var(--blue);
+    left: 58px;
+    font-family: "Poiret One";
+}
 
 
 
