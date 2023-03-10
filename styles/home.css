@@ -474,6 +474,95 @@ background: var(--white);
 }
 
 
+/*work experience section*/
+
+.container-3{
+    position:absolute;
+    min-width: 100%;
+    min-height: 50vh;
+    top: 250%;
+    
+}
+
+.work-title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: "Poiret One";
+    color: var(--white);
+    font-size: 40px;
+}
+
+.work-container{
+    position: absolute;
+    width: 986px;
+    height: 399px;
+    color:#313030;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    top: 100px;
+    left: 255px;
+}
+
+.company{
+    font-family: "Poiret One";
+    color: var(--white);
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    font-size: 30px;
+}
+
+.project-name{
+    color: var(--blue);
+}
+
+
+.work-container ul{
+    position: absolute;
+    width: 484px;
+    height: 250px;
+    top: 100px;
+    
+}
+
+.work-container ul li{
+    font-size: 15px;
+    font-family: "Poiret One";
+    color: var(--white);
+}
+
+.box-1{
+    position: absolute;
+    left: 700px;
+    top: 50px;
+    width:170px;
+    height: 270px;
+    border-radius: 20px;
+    background-color: var(--white);
+    
+}
+.box-2{
+    border-radius: 20px;
+    position: absolute;
+    width: 160px;
+    height: 255px;
+    top: 5px;
+    
+    
+}
+
+.box-2 img{
+    position: absolute;
+    border-radius: 20px;
+    width: 154px;
+    height: 285px;
+    bottom: 10px;
+    right: 30px;
+}
+
+
+
 
 
 
