@@ -484,7 +484,7 @@ background: var(--white);
 .container-3{
     position:absolute;
     min-width: 100%;
-    min-height: 50vh;
+    min-height: 75vh;
     top: 250%;
     
 }
@@ -567,6 +567,38 @@ background: var(--white);
 }
 
 
+.container-4{
+    position: absolute;
+    top: 325%;
+    min-width: 100%;
+    min-height: 100vh;
+
+}
+.projects-title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: var(--blue);
+    font-family: "Poiret One"
+}
+
+.gallery img{
+    width: 331px;
+    height: 242px;
+    border-radius: 20px;
+
+}
+
+.gallery{
+    position: absolute;
+    top: 100px;
+    width: 331px;
+    height: 479px;
+    background: #313030;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
 
 
 
