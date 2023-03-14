@@ -179,6 +179,7 @@ body{
     width: 100%;
     overflow: hidden;
     text-align: center;
+    transition: 1.5s ease;
 }
 
 .container .text{
@@ -593,7 +594,7 @@ background: var(--white);
 .gallery{
     /* position: absolute; */
     margin-top: 100px;
-    margin-left: 70px;
+    margin-left: 6%;
     width: 331px;
     height: 479px;
     background: #313030;
@@ -623,6 +624,22 @@ background: var(--white);
 
 .gallery:hover{
     transform: translate(5px, -5%);
+    transition: 0.5s ease;
+}
+
+
+.title a{
+    text-decoration: none;
+    background-color: #313030;
+
+}
+.title i{
+    background-color: #313030;
+    color: var(--white);
+
+}
+.title i:hover{
+    color: var(--grey);
     transition: 0.5s ease;
 }
 
@@ -699,6 +716,23 @@ background: var(--white);
 
 .links-to-contact a:hover{
     color: var(--grey);
+}
+
+
+/*credits bottom */
+
+
+.credits-web{
+    width: 350px;
+}
+
+
+.credits{
+    font-family: "Poiret One";
+    color:var(--white);
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
 }
 
 
