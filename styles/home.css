@@ -673,13 +673,35 @@ background: var(--white);
     background-color: #313030;
     position: absolute;
     top: 150px;
-    left:550px;
+    left:35%;;
 }
 .contact-options ul li{
     float: left;
     padding: 60px;
     background-color: #313030;
 }
+
+
+.links-to-contact{
+    background-color:#313030;
+    position: absolute;
+    top: 35%;
+    left: 33%;
+}
+.links-to-contact a{
+    text-decoration: none;
+    background-color: #313030;
+    font-family: "Poiret One";
+    color: var(--white);
+    padding-left: 30px;
+    transition: ease 0.5s;
+}
+
+.links-to-contact a:hover{
+    color: var(--grey);
+}
+
+
 
 
 
