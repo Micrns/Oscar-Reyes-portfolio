@@ -13,7 +13,7 @@
 
 
 *{
-
+    
     max-height: 100vh;
     max-width: 100%;
     background-color: var(--black); 
@@ -57,6 +57,11 @@ body{
 
 /*About -information*/
 
+.about{
+    width: 100%;
+    height: 100vh;
+}
+
 .about h1{
 
     color: var(--white);
@@ -69,7 +74,7 @@ body{
     
     font-family: "Poiret One";
     font-weight: 100;
-    z-index: 1;
+    
     text-align: center;
 
 }
@@ -100,12 +105,16 @@ body{
 /*social tab nav*/ 
 
 .navbar{
-    
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    z-index: 1;
     
 }
+
+
 
 .navbar li{
 
@@ -224,10 +233,10 @@ body{
 /* About page */
 
 .container-1{
-    min-height: 100vh;
-    min-width: 100%;
-    position: absolute;
-    top: 100%;
+    height: 100vh;
+    width: 100%;
+    /* position: absolute;
+    top: 100%; */
 }
 
 
@@ -251,9 +260,9 @@ body{
 
 .paragraph-1{
 
-    position: absolute;
+    position: relative;
     top: 100px;
-    left: 10%;
+    right: 20%;
 
 
     height: 393px;
@@ -269,11 +278,15 @@ body{
     
 }
 
+
 .click-down{
-    position: absolute;
+    
+    position: relative;
+    right: 25%;
+    bottom: 53%;
+    width: 100px;
+    
     color: var(--grey);
-    top: 530px;
-    left: 400px;
     cursor: pointer;
 }
 
@@ -288,17 +301,20 @@ body{
 }
 
 .click-down.active{
-    top: 710px;
+    right: 25%;
     transform: rotate(0.5turn);
 }
+
+
 
 
 
 /*profile pic */
 
 .profile-picture{
-    position: absolute;
-    left:60%;
+    position: relative;
+    left: 25%;
+    bottom: 50%;
     width: 448px;
     height: 500px;
     
@@ -306,6 +322,10 @@ body{
 
 .profile-picture img{
     border-radius: 20px;
+}
+
+.profile-picture.active{
+    bottom: 70%;
 }
 
 
@@ -335,10 +355,10 @@ background: var(--white);
 /*Skills setting*/
 
 .container-2{
-    min-width: 100%;
-    min-height: 50vh;
-    position: absolute;
-    top: 200%;
+    width: 100%;
+    height: 50vh;
+    /* position: absolute;
+    top: 200%; */
 }
 
 .skills-title{
@@ -353,12 +373,13 @@ background: var(--white);
 /*skills 1 box */
 
 .languages{
-    position: absolute;
+    position: relative;
     width: 321px;
     height: 136px;
     border-radius: 20px;
-    top: 110px;
-    left: 7%;
+    top: 70px;
+    right: 550px;
+    
     background: #313030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
@@ -392,12 +413,12 @@ background: var(--white);
 /*skills 2 box */
 
 .frontend-backend{
-    position: absolute;
+    position: relative;
     width: 321px;
     height: 136px;
     border-radius: 20px;
-    top: 110px;
-    left: 30%;
+    bottom: 66px;
+    right: 200px;
     background: #313030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -421,12 +442,12 @@ background: var(--white);
 
 /*skill box 3 */
 .databases{
-    position: absolute;
+    position: relative;
     width: 321px;
     height: 136px;
     border-radius: 20px;
-    top: 110px;
-    left: 53%;
+    left: 150px;
+    bottom: 200px;
     background: #313030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -452,12 +473,12 @@ background: var(--white);
 /*Skill box 4*/
 
 .tools{
-    position: absolute;
+    position: relative;
     width: 321px;
     height: 136px;
     border-radius: 20px;
-    top: 110px;
-    left: 75%;
+    bottom: 335px;
+    left: 500px;
     background: #313030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -483,10 +504,10 @@ background: var(--white);
 /*work experience section*/
 
 .container-3{
-    position:absolute;
-    min-width: 100%;
-    min-height: 75vh;
-    top: 250%;
+    
+    width: 100%;
+    height:100vh;
+    
     
 }
 
@@ -500,14 +521,13 @@ background: var(--white);
 }
 
 .work-container{
-    position: absolute;
+    position: relative;
     width: 986px;
     height: 399px;
     color:#313030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    top: 100px;
-    left: 25%;
+    top: 80px;
 }
 
 .company{
@@ -567,12 +587,11 @@ background: var(--white);
     right: 30px;
 }
 
-
+/*projects gallery*/
 .container-4{
-    position: absolute;
-    top: 325%;
-    min-width: 100%;
-    min-height: 100vh;
+    
+    width: 100%;
+    height: auto;
 
 }
 .projects-title{
@@ -591,18 +610,31 @@ background: var(--white);
 
 }
 
+.gallery-container{
+    position: relative;
+    top: 150px;
+    
+}
 .gallery{
-    /* position: absolute; */
-    margin-top: 100px;
-    margin-left: 6%;
+   
+    margin-left: 40px;
+    margin-top: 20px;
     width: 331px;
-    height: 479px;
+    height: 800px;
     background: #313030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     float: left;
 
    
+}
+
+.desc-para{
+    position: relative;
+    top: 20px;
+    background-color:#313030;
+    font-size: 12.6px;
+    
 }
 
 .gallery .title{
@@ -617,9 +649,20 @@ background: var(--white);
     background-color: #313030;
     font-family: "Poiret One";
     padding-top: 20px;
-    text-align: center;
+    text-align: left;
+    
     
 }
+
+.app-languages{
+    color: var(--blue);
+    background-color: #313030;
+    font-size: 12px;
+    position: absolute;
+    width: 331px;
+    text-align: center;
+}
+
 
 
 .gallery:hover{
@@ -646,9 +689,10 @@ background: var(--white);
 /*Contact section*/
 .container-5{
     position: absolute;
-    top: 425%;
     width: 100%;
     height: 100vh;
+    top: 600%;
+   
 
 }
 
@@ -690,7 +734,7 @@ background: var(--white);
     background-color: #313030;
     position: absolute;
     top: 150px;
-    left:35%;;
+    left:31%;;
 }
 .contact-options ul li{
     float: left;
@@ -702,8 +746,8 @@ background: var(--white);
 .links-to-contact{
     background-color:#313030;
     position: absolute;
-    top: 35%;
-    left: 33%;
+    top: 40%;
+    left: 30%;
 }
 .links-to-contact a{
     text-decoration: none;

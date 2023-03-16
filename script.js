@@ -29,11 +29,14 @@ setInterval(textLoad, 12000);
 
 const button_click = document.querySelector(".click-down");
 const expand_down = document.querySelector(".paragraph-1");
+const profile_pic = document.querySelector(".profile-picture")
 
 
 button_click.onclick = function(){
   expand_down.classList.toggle("active");
   button_click.classList.toggle("active");
+  profile_pic.classList.toggle("active");
+
 }
 
 
