@@ -506,7 +506,7 @@ background: var(--white);
 .container-3{
     
     width: 100%;
-    height:100vh;
+    height:75vh;
     
     
 }
@@ -629,6 +629,22 @@ background: var(--white);
    
 }
 
+/*adjust gallery according to text size*/
+.weather{
+    height:620px;
+}
+
+.holo{
+    height: 560px;
+}
+
+
+
+.ecommerce{
+    height:450px;
+}
+
+/*---------------------------------*/
 .desc-para{
     position: relative;
     top: 20px;
@@ -691,7 +707,7 @@ background: var(--white);
     position: absolute;
     width: 100%;
     height: 100vh;
-    top: 600%;
+    top: 570%;
    
 
 }
