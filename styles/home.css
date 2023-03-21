@@ -241,9 +241,9 @@ body{
 
 
 .about-1{
-    position: absolute;
+    text-align: center;
 
-    left: 10%;
+
 
     font-size: 40px;
     font-family: "Poiret One";
@@ -265,40 +265,37 @@ body{
     right: 20%;
 
 
-    height: 393px;
-    /*height: 610px;*/
-    width: 680px;
+   
+    height: 610px;
+    width: 750px;
 
     font-size: 30px;
     font-family: "Poiret One";
-    color: var(--grey);
-    overflow: hidden;
-    transition: 1s ease;
+    color: var(--white);
+
+    background-color: #313030;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
 
     
 }
 
-
-.click-down{
-    
-    position: relative;
-    right: 25%;
-    bottom: 53%;
-    width: 100px;
-    
-    color: var(--grey);
-    cursor: pointer;
-}
-
-.click-down:hover{
-    color: var(--black);
-
+.paragraph-text{
+    background-color: #313030;
+    position: absolute;
+    width: 700px;
+    height: 589px;
+    left: 20px;
+    top: 10px;
 }
 
 
-.paragraph-1.active{
-    height:610px;
-}
+
+
+
+
+
 
 .click-down.active{
     right: 25%;
@@ -390,22 +387,25 @@ background: var(--white);
 
 
 .lang-title{
-    position: absolute;
+    
     background-color: #313030;
     color: var(--white);
     font-family: "Poiret One";
+    text-align: center;
+    position: relative;
     top: 10px;
-    left: 120px;
+    border-radius: 30px;
     
 
 
 }
 .skill-set-lang{
-    position: absolute;
-    top: 50px;
+    position: relative;
+    text-align: center;
+    top: 35px;
     background-color: #313030;
     color: var(--blue);
-    right: 46px; 
+    
     font-family: "Poiret One";
 
 }
@@ -423,22 +423,7 @@ background: var(--white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.frontend-title{
-    position: absolute;
-    background-color: #313030;
-    color: var(--white);
-    font-family: "Poiret One";
-    top: 10px;
-    left: 99px;
-}
-.skill-set{
-    position: absolute;
-    top: 50px;
-    background-color: #313030;
-    color: var(--blue);
-    left: 58px;
-    font-family: "Poiret One";
-}
+
 
 /*skill box 3 */
 .databases{
@@ -452,23 +437,7 @@ background: var(--white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.database-title{
-    position: absolute;
-    background-color: #313030;
-    color: var(--white);
-    font-family: "Poiret One";
-    top: 10px;
-    left: 110px;
-}
 
-.skill-set-data{
-    position: absolute;
-    top: 50px;
-    background-color: #313030;
-    color: var(--blue);
-    left: 58px;
-    font-family: "Poiret One";
-}
 
 /*Skill box 4*/
 
@@ -481,23 +450,6 @@ background: var(--white);
     left: 500px;
     background: #313030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.tools-title{
-    position: absolute;
-    background-color: #313030;
-    color: var(--white);
-    font-family: "Poiret One";
-    top: 10px;
-    left: 130px;
-
-}
-.skills-tools{
-    position: absolute;
-    top: 50px;
-    background-color: #313030;
-    color: var(--blue);
-    left: 58px;
-    font-family: "Poiret One";
 }
 
 
@@ -591,7 +543,8 @@ background: var(--white);
 .container-4{
     
     width: 100%;
-    height: auto;
+    height: 100vh;
+    
 
 }
 .projects-title{
@@ -617,14 +570,18 @@ background: var(--white);
 }
 .gallery{
    
-    margin-left: 40px;
-    margin-top: 20px;
+   
+
     width: 331px;
     height: 800px;
     background: #313030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     float: left;
+    margin: 25px;
+
+
+
 
    
 }
@@ -642,6 +599,10 @@ background: var(--white);
 
 .ecommerce{
     height:450px;
+}
+
+.python{
+    height: 600px;
 }
 
 /*---------------------------------*/
@@ -673,7 +634,7 @@ background: var(--white);
 .app-languages{
     color: var(--blue);
     background-color: #313030;
-    font-size: 12px;
+    font-size: 13px;
     position: absolute;
     width: 331px;
     text-align: center;
@@ -707,7 +668,9 @@ background: var(--white);
     position: absolute;
     width: 100%;
     height: 100vh;
-    top: 570%;
+    top: 490%;
+    
+    
    
 
 }
@@ -745,32 +708,36 @@ background: var(--white);
     
 }
 
-.contact-options ul{
-    list-style-type: none;
+
+.center-list{
+    text-align: center;
     background-color: #313030;
-    position: absolute;
-    top: 150px;
-    left:31%;;
+    border-radius: 20px;;
+}
+.contact-options ul{
+    display: inline-block;
+    list-style-type: none;
+    background-color:#313030;
+
+    
 }
 .contact-options ul li{
     float: left;
-    padding: 60px;
+    padding: 65px;
     background-color: #313030;
 }
 
 
 .links-to-contact{
     background-color:#313030;
-    position: absolute;
-    top: 40%;
-    left: 30%;
+    text-align: center;
 }
 .links-to-contact a{
     text-decoration: none;
     background-color: #313030;
     font-family: "Poiret One";
     color: var(--white);
-    padding-left: 30px;
+    padding-left: 15px;
     transition: ease 0.5s;
 }
 
