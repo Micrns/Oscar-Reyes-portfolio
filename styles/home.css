@@ -367,20 +367,25 @@ background: var(--white);
     width: 100%; 
 }
 
-/*skills 1 box */
 
-.languages{
+
+.skills-container{
     position: relative;
+    top: 80px;
+    display: table;
+   
+}
+
+.box{
+
     width: 321px;
     height: 136px;
     border-radius: 20px;
-    top: 70px;
-    right: 550px;
-    
     background: #313030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
-    
+    float: left;
+    margin: 50px;
+   
 
 }
 
@@ -408,48 +413,6 @@ background: var(--white);
     
     font-family: "Poiret One";
 
-}
-
-/*skills 2 box */
-
-.frontend-backend{
-    position: relative;
-    width: 321px;
-    height: 136px;
-    border-radius: 20px;
-    bottom: 66px;
-    right: 200px;
-    background: #313030;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-
-
-/*skill box 3 */
-.databases{
-    position: relative;
-    width: 321px;
-    height: 136px;
-    border-radius: 20px;
-    left: 150px;
-    bottom: 200px;
-    background: #313030;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-
-
-/*Skill box 4*/
-
-.tools{
-    position: relative;
-    width: 321px;
-    height: 136px;
-    border-radius: 20px;
-    bottom: 335px;
-    left: 500px;
-    background: #313030;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -489,6 +452,15 @@ background: var(--white);
     left: 50px;
     top: 20px;
     font-size: 30px;
+}
+
+.company a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.company a:hover{
+    color:var(--grey);
 }
 
 .project-name{
@@ -557,7 +529,7 @@ background: var(--white);
 }
 
 .gallery img{
-    width: 331px;
+    width: 340px;
     height: 242px;
     border-radius: 20px;
 
@@ -565,20 +537,28 @@ background: var(--white);
 
 .gallery-container{
     position: relative;
-    top: 150px;
     
+    top: 150px;
+    width: 1600px;
+    height: 100vh;
+    display: table;
+    background-color:var(--black);
+
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .gallery{
    
    
 
-    width: 331px;
+    width: 340px;
     height: 800px;
     background: #313030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     float: left;
-    margin: 25px;
+    /* margin: 70px; */
+    margin: 30px;
 
 
 
@@ -605,12 +585,19 @@ background: var(--white);
     height: 600px;
 }
 
+.portfolio{
+    height: 650px;
+}
+
 /*---------------------------------*/
 .desc-para{
     position: relative;
-    top: 20px;
+    top: 25px;
     background-color:#313030;
     font-size: 12.6px;
+    left: 5px;
+    width: 300px;
+    
     
 }
 
