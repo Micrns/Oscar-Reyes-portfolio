@@ -262,7 +262,7 @@ body{
 
     position: relative;
     top: 100px;
-    right: 20%;
+    right: 25%;
 
 
    
@@ -304,26 +304,36 @@ body{
 
 
 
-
+.about-me-container{
+    position: relative;
+    top: 30px;
+    display: table;
+    width: 1700px;
+    background-color: #252625;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 800px;
+    border-radius: 20px;
+}
 
 /*profile pic */
 
 .profile-picture{
-    position: relative;
-    left: 25%;
-    bottom: 50%;
-    width: 448px;
-    height: 500px;
+    position: absolute;
+    left: 65%;
+    bottom: 15%;
+    
+    
     
 }
 
 .profile-picture img{
+    width: 448px;
+    height: 550px;
     border-radius: 20px;
+    
 }
 
-.profile-picture.active{
-    bottom: 70%;
-}
+
 
 
 
