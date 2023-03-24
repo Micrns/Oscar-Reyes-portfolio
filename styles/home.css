@@ -14,10 +14,11 @@
 
 *{
     
-    max-height: 100vh;
-    max-width: 100%;
+    /* max-height: 100vh;
+    max-width: 100%; */
     background-color: var(--black); 
     margin: 0 auto;
+   
     box-sizing: border-box;
     scroll-behavior: smooth;
     
@@ -233,17 +234,18 @@ body{
 /* About page */
 
 .container-1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     /* position: absolute;
     top: 100%; */
+    
 }
 
 
 .about-1{
-    position: absolute;
+    text-align: center;
 
-    left: 10%;
+
 
     font-size: 40px;
     font-family: "Poiret One";
@@ -261,72 +263,81 @@ body{
 .paragraph-1{
 
     position: relative;
-    top: 100px;
-    right: 20%;
+    top: 10%;
+    right: 25%;
 
 
-    height: 393px;
-    /*height: 610px;*/
-    width: 680px;
+   
+    height: 610px;
+    width: 750px;
 
     font-size: 30px;
     font-family: "Poiret One";
-    color: var(--grey);
-    overflow: hidden;
-    transition: 1s ease;
+    color: var(--white);
+
+    background-color: #313030;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
 
     
 }
 
+.paragraph-text{
+    background-color: #313030;
+    position: absolute;
+    width: 700px;
+    height: 589px;
+    left: 20px;
+    top: 10px;
+}
 
-.click-down{
-    
+
+
+
+
+
+
+
+
+
+
+
+.about-me-container{
     position: relative;
-    right: 25%;
-    bottom: 53%;
-    width: 100px;
+    top: 30px;
+    display: table;
+    /* width: 1700px; */
+    width: 90%;
+    background-color: #252625;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* height: 800px; */
+    height: 80vh;
     
-    color: var(--grey);
-    cursor: pointer;
+    border-radius: 20px;
 }
-
-.click-down:hover{
-    color: var(--black);
-
-}
-
-
-.paragraph-1.active{
-    height:610px;
-}
-
-.click-down.active{
-    right: 25%;
-    transform: rotate(0.5turn);
-}
-
-
-
-
 
 /*profile pic */
 
 .profile-picture{
-    position: relative;
-    left: 25%;
-    bottom: 50%;
-    width: 448px;
-    height: 500px;
+    /* position: absolute;
+    left: 65%;
+    bottom: 15%;
+     */
+    position: absolute;
+    left: 140%;
+      
     
 }
 
 .profile-picture img{
+    width: 448px;
+    height: 550px;
     border-radius: 20px;
+    
 }
 
-.profile-picture.active{
-    bottom: 70%;
-}
+
 
 
 
@@ -362,142 +373,65 @@ background: var(--white);
 }
 
 .skills-title{
-    position: absolute;
+    position: relative;
     color: var(--blue);
     font-family: "Poiret One";
     font-size: 40px;
-    text-align: center;
-    width: 100%; 
+    display: table;
+    
 }
 
-/*skills 1 box */
 
-.languages{
+
+.skills-container{
     position: relative;
+    top: 80px;
+    display: table;
+    
+    
+    
+
+   
+}
+
+.box{
+    
     width: 321px;
     height: 136px;
     border-radius: 20px;
-    top: 70px;
-    right: 550px;
-    
     background: #313030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
-    
+    float: left;
+    /* margin: 50px; */
+    margin: 20px;
+   
 
 }
 
 
 
 .lang-title{
-    position: absolute;
+    
     background-color: #313030;
     color: var(--white);
     font-family: "Poiret One";
+    text-align: center;
+    position: relative;
     top: 10px;
-    left: 120px;
+    border-radius: 30px;
     
 
 
 }
 .skill-set-lang{
-    position: absolute;
-    top: 50px;
-    background-color: #313030;
-    color: var(--blue);
-    right: 46px; 
-    font-family: "Poiret One";
-
-}
-
-/*skills 2 box */
-
-.frontend-backend{
     position: relative;
-    width: 321px;
-    height: 136px;
-    border-radius: 20px;
-    bottom: 66px;
-    right: 200px;
-    background: #313030;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.frontend-title{
-    position: absolute;
-    background-color: #313030;
-    color: var(--white);
-    font-family: "Poiret One";
-    top: 10px;
-    left: 99px;
-}
-.skill-set{
-    position: absolute;
-    top: 50px;
+    text-align: center;
+    top: 35px;
     background-color: #313030;
     color: var(--blue);
-    left: 58px;
+    
     font-family: "Poiret One";
-}
 
-/*skill box 3 */
-.databases{
-    position: relative;
-    width: 321px;
-    height: 136px;
-    border-radius: 20px;
-    left: 150px;
-    bottom: 200px;
-    background: #313030;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.database-title{
-    position: absolute;
-    background-color: #313030;
-    color: var(--white);
-    font-family: "Poiret One";
-    top: 10px;
-    left: 110px;
-}
-
-.skill-set-data{
-    position: absolute;
-    top: 50px;
-    background-color: #313030;
-    color: var(--blue);
-    left: 58px;
-    font-family: "Poiret One";
-}
-
-/*Skill box 4*/
-
-.tools{
-    position: relative;
-    width: 321px;
-    height: 136px;
-    border-radius: 20px;
-    bottom: 335px;
-    left: 500px;
-    background: #313030;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.tools-title{
-    position: absolute;
-    background-color: #313030;
-    color: var(--white);
-    font-family: "Poiret One";
-    top: 10px;
-    left: 130px;
-
-}
-.skills-tools{
-    position: absolute;
-    top: 50px;
-    background-color: #313030;
-    color: var(--blue);
-    left: 58px;
-    font-family: "Poiret One";
 }
 
 
@@ -537,6 +471,15 @@ background: var(--white);
     left: 50px;
     top: 20px;
     font-size: 30px;
+}
+
+.company a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.company a:hover{
+    color:var(--grey);
 }
 
 .project-name{
@@ -591,9 +534,12 @@ background: var(--white);
 .container-4{
     
     width: 100%;
-    height: auto;
+    height: 100vh;
+    
+    
 
 }
+
 .projects-title{
     position: absolute;
     width: 100%;
@@ -604,7 +550,7 @@ background: var(--white);
 }
 
 .gallery img{
-    width: 331px;
+    width: 340px;
     height: 242px;
     border-radius: 20px;
 
@@ -612,19 +558,37 @@ background: var(--white);
 
 .gallery-container{
     position: relative;
-    top: 150px;
     
+    /* top: 50px; */
+    top: 6%;
+    /* width: 1600px; */
+    /* width: 60%; */
+    
+    
+    display: table;
+    /* background-color:var(--black);
+
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
+
+
+
+
 .gallery{
    
-    margin-left: 40px;
-    margin-top: 20px;
-    width: 331px;
+   
+
+    width: 340px;
     height: 800px;
     background: #313030;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     float: left;
+    margin: 30px;
+
+
+
 
    
 }
@@ -644,12 +608,23 @@ background: var(--white);
     height:450px;
 }
 
+.python{
+    height: 600px;
+}
+
+.portfolio{
+    height: 650px;
+}
+
 /*---------------------------------*/
 .desc-para{
     position: relative;
-    top: 20px;
+    top: 25px;
     background-color:#313030;
     font-size: 12.6px;
+    left: 5px;
+    width: 300px;
+    
     
 }
 
@@ -673,7 +648,7 @@ background: var(--white);
 .app-languages{
     color: var(--blue);
     background-color: #313030;
-    font-size: 12px;
+    font-size: 13px;
     position: absolute;
     width: 331px;
     text-align: center;
@@ -707,7 +682,9 @@ background: var(--white);
     position: absolute;
     width: 100%;
     height: 100vh;
-    top: 570%;
+    /* top: 490%; */
+    
+    
    
 
 }
@@ -745,32 +722,36 @@ background: var(--white);
     
 }
 
-.contact-options ul{
-    list-style-type: none;
+
+.center-list{
+    text-align: center;
     background-color: #313030;
-    position: absolute;
-    top: 150px;
-    left:31%;;
+    border-radius: 20px;;
+}
+.contact-options ul{
+    display: inline-block;
+    list-style-type: none;
+    background-color:#313030;
+
+    
 }
 .contact-options ul li{
     float: left;
-    padding: 60px;
+    padding: 65px;
     background-color: #313030;
 }
 
 
 .links-to-contact{
     background-color:#313030;
-    position: absolute;
-    top: 40%;
-    left: 30%;
+    text-align: center;
 }
 .links-to-contact a{
     text-decoration: none;
     background-color: #313030;
     font-family: "Poiret One";
     color: var(--white);
-    padding-left: 30px;
+    padding-left: 15px;
     transition: ease 0.5s;
 }
 
@@ -794,6 +775,230 @@ background: var(--white);
     bottom: 30px;
     text-align: center;
 }
+
+
+
+/*size adjustments media queries */
+@media (max-width: 1440px){
+
+    /* .about-me-container{
+        width: 1300px;
+        height: 550px;
+       
+        
+    } */
+
+    .paragraph-1{
+        
+        height:500px;
+        width: 650px;
+        right: 20%;
+        top: 20px;
+    }
+
+    .paragraph-text{
+        width: 600px;
+        height: 400px;
+        font-size:25px;
+    }
+
+   
+
+    .profile-picture img{
+        height: 450px;
+        width: 400px;
+    }
+
+    .box{
+        margin: 10px;
+    }
+
+   
+
+    .gallery{
+        margin: 5px;
+    }
+
+   
+
+
+
+}
+
+
+@media  (max-width: 1530px){
+    .paragraph-1{
+        width:600;
+        right: 20%;
+        top: 5%;
+    }
+    .profile-picture{
+        left: 110%;
+    }
+
+   
+
+    
+}
+
+
+@media (max-width: 375px){
+
+    .about{
+        font-size: 7px;
+       
+    }
+    .projects{
+        
+        font-size: 7px
+    }
+    .contact{
+        
+        font-size: 7px;
+        
+    }
+
+    .linkedicon{
+        font-size: 15px;
+    }
+    .giticon{
+        font-size: 15px;
+       
+    }
+    
+    .resume{
+        font-size: 15px;
+        
+    }
+
+
+
+    .h1{
+        font-size:35px;
+    }
+
+    .container .text{
+        font-size: 30px;
+    }
+
+
+    
+    .paragraph-1{
+        width: 310px;
+        right: 2%;
+        height:400px;
+        
+    }
+
+    .paragraph-text{
+        width: 85%;
+        font-size:15px;
+        right: 3%;
+        height:380px;
+
+    }
+
+    .profile-picture{
+        left: 20%;
+        top: 105%;
+    }
+
+    .profile-picture img{
+        width: 200px;
+        height: 250px;
+    }
+
+    .container-2{
+        height: 100vh;
+    }
+
+    .company{
+        font-size: 20px;
+    }
+
+    .work-container{
+        width: 100%;
+        height: 600px;
+    }
+
+    .work-container ul {
+        width: 100%;
+        top: 10%;
+
+    }
+
+    .work-container ul li{
+        font-size:12px;
+    }
+
+    .box-1{
+        left: 30%;
+        top: 50%;
+    }
+
+    .gallery{
+        margin: 5px;
+        height: 270px;
+        font-size: 10;
+        width: 100%;
+        
+    }
+
+    .gallery img{
+        width: 150px;
+        height: 100px;
+        position: relative;
+        display: table;
+    }
+
+    .gallery .title{
+        font-size: 10px;
+        
+        
+    
+    }
+
+    .desc-para{
+        font-size:10px;
+        width: 300px;
+    }
+    .app-languages{
+        
+        font-size:10px;
+    }
+    .desc-para{
+        font-size: 6.5px;
+    }
+
+    .contact-options{
+        width: 100%;
+        height: 200px;
+    }
+
+    /* .contact-options ul{
+        width: 200px;
+        height: 100px;
+        
+    } */
+
+    .contact-options ul li i{
+        font-size: 20px;
+    }
+
+    .contact-options ul li{
+        padding: 40px;
+    }
+
+    .links-to-contact{
+        font-size: 10px;
+    }
+
+   
+
+    
+
+}
+
 
 
 
