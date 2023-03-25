@@ -105,6 +105,21 @@ body{
 
 /*social tab nav*/ 
 
+
+.home-icon{
+    text-decoration: none;
+    color:var(--white);
+    position: relative;
+    top:15px;
+    font-size: 20px;
+    transition: ease 0.3s;
+    
+}
+
+.home-icon:hover{
+    color: var(--grey);
+}
+
 .navbar{
     position: fixed;
     display: flex;
@@ -161,7 +176,7 @@ body{
 
 .navigate-web{
 
-    padding-left: 33%;
+    padding-left: 5%;
 }
 
 .about{
